@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Global Plate Magazine Cover Mockup</title>
-    <script src="https://media.istockphoto.com/id/632439546/photo/pasta-plate.jpg?s=612x612&w=0&k=20&c=zZPaNg_mf7cTVIeJPFVRtsjYClNYkGMcUc5ZBrARwZU="></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         /* Define custom fonts */
@@ -66,14 +66,16 @@
                     15 Classic Recipes Reimagined
                 </h3>
 
-                <!-- Image Placeholder Area (Simulating rustic, golden lighting) -->
-                <div class="mt-6 flex-grow rounded-lg overflow-hidden border-4 border-magazine-saffron shadow-lg relative bg-magazine-orange/20 flex items-center justify-center p-4 min-h-[250px] lg:min-h-0">
-                    <div class="text-center p-6 bg-magazine-creme/80 rounded-lg backdrop-blur-sm border border-magazine-olive/30">
-                        <p class="font-serif-display text-xl sm:text-2xl font-bold text-magazine-olive">IMAGE DESCRIPTION</p>
-                        <p class="mt-2 text-sm italic text-gray-700">A close-up of a rustic table with handmade tortellini en brodo, steam rising, against a warm, stone-walled Italian kitchen. Golden, soft lighting suggests a wood-fired oven and a smiling chef.</p>
-                        <p class="mt-4 text-xs font-bold text-magazine-saffron">Feature Photo Placeholder</p>
-                    </div>
-                    <!-- Golden Light Effect -->
+                <!-- Main Image Feature Area (The previous text placeholder is replaced with an <img>) -->
+                <div class="mt-6 flex-grow rounded-lg overflow-hidden border-4 border-magazine-saffron shadow-lg relative min-h-[250px] lg:min-h-0">
+                    <!-- The actual image tag, using a placeholder URL themed to match the story (Burnt Orange background, Creamy White text) -->
+                    <img 
+                        src="https://placehold.co/800x600/AA4A1C/FAF9F6/png?text=HANDMADE+TORTELLINI+EN+BRODO" 
+                        alt="Close-up of handmade tortellini en brodo on a rustic table in an Italian kitchen with golden lighting."
+                        class="w-full h-full object-cover"
+                        onerror="this.onerror=null; this.src='https://placehold.co/800x600/AA4A1C/FAF9F6/png?text=Loading+Failed+Image'"
+                    />
+                    <!-- Golden Light Effect overlaying the image for aesthetic flair -->
                     <div class="absolute inset-0 bg-yellow-400 opacity-20 pointer-events-none mix-blend-overlay"></div>
                 </div>
             </div>
@@ -156,6 +158,3 @@
 </body>
 </html>
 
-    </div>
-</body>
-</html>
